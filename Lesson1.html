@@ -27,6 +27,10 @@
         --primary-color: #3e396b;
         --secondary-color: #6f23ff;
         --background-color: #3e396b;
+        --dark-blue: #253f6f;
+        --color-6: #d2fff8;
+        --dark-grey-2: #adadad;
+        --grade-2-color-2: #f8ceab;
       }
 
       h2,
@@ -40,26 +44,28 @@
       }
 
       h3 {
-        font-family: "Domine", serif;
         align-items: center;
         color: var(--primary-color);
       }
 
       h4 {
         color: white;
-        font-family: "Times New Roman", Times, serif;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 25px;
+        font-family: "Domine", serif;
       }
 
       h5 {
         color: white;
         font-size: 20px;
       }
+
       h6 {
         color: #3e396b;
         font-size: 16px;
         font-weight: bold;
+        align-self: baseline;
+        padding-left: 16px;
       }
 
       p {
@@ -107,42 +113,132 @@
 
       section > .leapHead {
         justify-content: center;
-        margin-left: 50%;
+        margin: 15px;
       }
 
       button {
         background-color: yellow;
-        color: #6f23ff;
+        color: var(--dark-blue);
         padding: 5px;
         margin-left: 10%;
         border-radius: 8px;
-        width: 50%;
+        width: 30%;
         border: white solid 1px;
+        margin-top: 20px;
+        font-weight: bold;
       }
 
       section > .leapHeadtwo {
         background-color: var(--secondary-color);
         margin: 15px;
-        padding: 10px;
+        padding: 60px;
         border-radius: 15px;
       }
 
-      section > div > div > .card {
+      section > .leapHeadout {
+        background-color: var(--primary-color);
+        margin: 15px;
+        padding: 40px;
+        border-radius: 15px;
+      }
+
+      section > .cardOne {
+        background-color: #ffff;
+        height: 80vh;
+        margin-top: 15px;
+      }
+
+      section > .leapHeadtwo > .text-center > img {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 200px;
+      }
+
+      section > .leapHeadout > .text-center > img {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 100px;
+      }
+      section > .project {
+        background-color: var(--color-6);
+      }
+      section > .d-flex > .project > .cardOriginal {
         margin: 10px;
-        background-color: #ffeff2;
-        width: 350px;
+        background-color: var(--grade-2-color-2);
+        width: 290px;
         height: 300px;
         border-radius: 30px;
         margin: 20px;
         padding: 16px;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 40px;
+      }
+      section > .d-flex > .project > .cardOriginal > .d-flex > img {
+        width: 80px;
+        height: 80px;
+        border-radius: 60px;
+      }
+      section > .d-flex > .project > .cardOriginal > .d-flex > div > p {
+        padding-top: 0px;
+        font-weight: lighter;
+        color: #000;
+        padding-left: 16px;
+        font-size: 13px;
+      }
+      section >h4 {
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: "Domine", serif;
       }
 
-      section > div > div > .card > .d-flex > img {
-        width: 60px;
-        height: 60px;
-        border-radius: 80px;
+      section > .d-flex > .project > .cardTwo {
+        margin: 10px;
+        background-color: var(--color-6);
+        width: 290px;
+        height: 330px;
+        border-radius: 30px;
+        margin: 20px;
+        padding: 16px;
+        margin-left: 10px;
+        margin-top: 40px;
+      }
+      section > .d-flex > .project > .cardTwo > .d-flex > img {
+        width: 80px;
+        height: 80px;
+        border-radius: 60px;
+      }
+      section > .d-flex > .project > .cardTwo > .d-flex > div > p {
+        padding-top: 0px;
+        font-weight: lighter;
+        color: #000;
+        padding-left: 16px;
+        font-size: 13px;
+      }
+
+      section > .d-flex > .project > .cardThree {
+        margin: 10px;
+        background-color: var(--dark-grey-2);
+        width: 290px;
+        height: 330px;
+        border-radius: 30px;
+        margin: 20px;
+        padding: 16px;
+        margin-left: 10px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+      }
+      section > .d-flex > .project > .cardThree > .d-flex > img {
+        width: 80px;
+        height: 80px;
+        border-radius: 60px;
+      }
+      section > .d-flex > .project > .cardThree > .d-flex > div > p {
+        padding-top: 0px;
+        font-weight: lighter;
+        color: #000;
+        padding-left: 16px;
+        font-size: 13px;
       }
     </style>
   </head>
@@ -197,6 +293,7 @@
         />
       </div>
     </section>
+    <!--Centered section-->
 
     <section class="container">
       <div>
@@ -208,25 +305,32 @@
           collaboratively and connect to life-changing opportunities.
         </p>
       </div>
-      <div class="leap">
+      <div class="leapHeadout">
+        <div class="text-center">
+          <img
+            src="assets/images/leap.png"
+            alt="leap logo"
+            width="150px"
+            height="70px"
+          />
+        </div>
         <div class="d-flex">
-          <img src="assets/images/help.webp" class="leapHead" alt="help" />
-
-          <div class="pt-5">
+          <div>
             <img
-              src="assets/images/leap.png"
+              src="assets/images/help.webp"
               class=""
-              alt="leap"
-              width="73.5px"
-              height="50px"
+              alt="help"
+              width="300px"
+              height="300px"
             />
+          </div>
+          <div>
             <h4>Practice speaking English with people like you</h4>
 
             <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
-              aspernatur, praesentium reiciendis amet vel consequatur architecto
-              ratione dignissimos quo nam quia quam laborum in repellendus error
-              impedit non nemo? Officia.
+              Leap is where you talk 1-on-1 with people who share your goals and
+              interests and receive personalized feedback to sound natural and
+              fluent.
             </p>
             <button>Learn More></button>
           </div>
@@ -236,18 +340,23 @@
 
     <section class="container">
       <div class="leapHeadtwo">
-        <div>
+        <div class="text-center">
           <img
             src="assets/images/microverse.png"
-            class=""
             alt="microverse logo"
-            width="100px"
-            height="55px"
+            width="150px"
+            height="70px"
           />
         </div>
         <div class="d-flex">
           <div>
-            <img src="assets/images/needed.png" class="" alt="help" />
+            <img
+              src="assets/images/needed.png"
+              class=""
+              alt="help"
+              width="300px"
+              height="300px"
+            />
           </div>
           <div>
             <h4>Microverse's Full-Stack Web Development Program</h4>
@@ -262,14 +371,13 @@
         </div>
       </div>
     </section>
+    <!--card section-->
 
     <section class="container">
-      <h4 class="text-black">
-        We’ve helped thousands of developers start international careers
-      </h4>
+      <h4>We’ve helped thousands of developers start international careers</h4>
       <div class="d-flex">
-        <div class="d-flex">
-          <div class="card">
+        <div class="project">
+          <div class="cardOriginal">
             <div class="d-flex">
               <img
                 src="assets/images/luke.webp"
@@ -277,32 +385,40 @@
                 width="100px"
                 height="100px"
               />
-              <h6>Kevin M</h6>
-              <br />
-              <p>Senior software developer at microsoft</p>
+              <div>
+                <h6>Kevin M</h6>
+                <p>Senior software developer at microsoft</p>
+              </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              laboriosam eum accusantium, quas eos dolor harum sunt optio
+              _"For me, it was a no-brainer. I wannted to try microverse because
+              while the alternatives would give you a toturial or a course ypu
+              have to do it alone, but with this, I had the accountability."
             </p>
           </div>
         </div>
-        <div class="d-flex">
-          <div class="card">
+        <div class="project">
+          <div class="cardTwo">
             <div class="d-flex">
-              <img src="assets/images/gabriela.webp" alt="img" />
-              <h6>Gabriela C</h6>
-              <p>Frontend developer at Upstart 13</p>
+              <img
+                src="assets/images/gabriela.webp"
+                alt="img"
+                width="100px"
+                height="100px"
+              />
+              <div>
+                <h6>Gabriel C</h6>
+                <p>Frontend developer at upstart 13</p>
+              </div>
             </div>
-
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              laboriosam eum accusantium, quas eos dolor harum sunt optio
+              _"My journey has changed 100% since microverse. My current salary
+              is 5.6 times more per year than my previous years."
             </p>
           </div>
         </div>
-        <div class="d-flex">
-          <div class="card">
+        <div class="project">
+          <div class="cardThree">
             <div class="d-flex">
               <img
                 src="assets/images/loius2.png"
@@ -310,13 +426,15 @@
                 width="100px"
                 height="100px"
               />
-              <h6>Louis F</h6>
-              <p>Full-Stack developer</p>
+              <div>
+                <h6>Luis F</h6>
+                <p>Full-Stack Developer</p>
+              </div>
             </div>
-
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              laboriosam eum accusantium, quas eos dolor harum sunt optio
+              "it's been an incredible jounery! leap helped me lose my fear tp
+              make mistakes when sprak english with other people. The
+              personalized feedback helped me progress much faster.""
             </p>
           </div>
         </div>
